@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>table with css</Title>
+        <style>
+            table{
+                width: 100%;
+
+            }
+            caption{
+                text-align: left;
+                caption-side: bottom;
+                text-size-adjust: 50px;
+            }
+            th, td{
+                text-align: center;
+                background-color: burlywood;
+                border-top:  1px solid greenyellow;
+                border-bottom: 2px solid blue;
+                padding: 15px;
+                s
+            }
+            td{
+                vertical-align: top;
+            }
+            table,th,td{
+               /* border: 1px solid black; */
+                border-collapse: collapse;
+            }
+            tr:nth-child(even){
+                 background-color:lightblue;}
+                 tr:nth-child(odd){
+                     background-color: cornflowerblue;
+                 } 
+            tr:hover{
+                background-color: red;
+            }
+            th{
+                height: 50px;
+
+            }
+            
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>Details of the students</caption>
+            <tr>
+                <th>Sl no.</th>
+                <th>Name</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>gadan</td>
+                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, voluptatibus! Id ullam dolorem ex nisi eligendi est magnam, in provident.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>ramu</td>
+                <td>ece</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>raju</td>
+                <td>mech</td>
+            </tr>
+        </table>
+    </body>
+</html>

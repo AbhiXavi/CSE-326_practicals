@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+   <head>
+   <style>
+  <!--  p{
+	background-color:red;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size:x-large
+	}-->
+   
+   
+   </style>
+      <script>
+	    function changeStyle{
+		document.getElementById('para3').style=' background-color: red;'
+		document.getElementById('para3').style='font-family: Verdana, Geneva, Tahoma, sans-serif;'
+		document.getElementById('para3').style='font-size:x-large;'
+		
+		
+		}
+	  </script>
+   
+   </head>
+   <body>
+    <h1>Change the content of paragraph</h1>
+	<p id="para1">
+	   We are learning Javascript!
+	</p>
+	<button type="button"
+	onclick="document.getElementById('para1').innerHTML='We are in class!'">
+	CHANGE
+	</button>
+	
+	<h1>Control an image HTML element</h1>
+	<img id="img1" src="download(1).jfif" style="width: 100px; height:60px;">
+	<button type="button"
+	onclick= "document.getElementById('img1').src='download.jfif'">
+	Dhoni in csk
+	</button>
+	<button type="button"
+	onclick="document.getElementById('img1').src='download 2.jfif'">
+	KOHLI
+	</button>
+	
+	<h1>controlling the style of an html element</h1>
+	<p id="para2" style="text-align: center;">
+     jghjksdf jfjksfjkhs ghyhndhd dhfjfh nkjskjkj nvjkdfjk
+    </p>
+
+    <button type="button"
+	onclick="document.getElementById('para2').style='text-align:left;color:red'">
+     STYLE
+    </button>	
+
+     <p id="para3" onclick="changeStyle()">
+	   
+	    lorem ndhssjkj dsfksjkfjds jnfjds jdhfjk jdnfnjkdn jfjksf jfjkdsf njfs jnjkfnds jnsdnf jehiohe lkgokdf ienwe jndsknf ndsfd  idfken esohfiew  fiohfkoewf fweirfiwekfn fifweiofwenfw iefn iejf n  iew rwjjf oerkenm 
+	 
+	 
+	 </p>	
+	 <h2> show and hide the content</h2>
+	 <p id="para4">
+	  lorem ndhssjkj dsfksjkfjds jnfjds jdhfjk jdnfnjkdn jf
+	 </p>
+	 <button type="button"
+	 onclick="document.getElementById('para4')style.display='none'">
+	 hide
+	 </button>
+	 
+	 <button type="button"
+	 onclick="document.getElementById('para4').style.display='block'">
+	 SHOW
+	 </button>
+   
+   </body>
+
+
+
+
+
+
+</html>

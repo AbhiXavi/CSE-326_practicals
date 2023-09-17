@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* p{
+background-color: red;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: x-large;
+}*/
+</style>
+<script>
+function changeStyle(){
+document.getElementById('para3').style=' font-family: Verdana, Geneva, Tahoma, sans-serif;background-color: red;font-size: x-large;';
+}
+function hideAll(){
+document.getElementById('para4').style.display='none';
+document.getElementById('button1').style.display='none';
+document.getElementById('button2').style.display='block';
+}
+function showAll(){
+document.getElementById('para4').style.display='block';
+document.getElementById('button2').style.display='none';
+document.getElementById('button1').style.display='block';
+}
+</script>
+</head>
+<body>
+<h1>Chnage the content of the paragraph</h1>
+<p id="para1">
+We are learning Java Script!
+</p>
+<button type="button"
+onclick="document.getElementById('para1').innerHTML='We are in class!'">
+CHANGE
+</button>
+
+<h1>Contol an image HTML element</h1>
+<img id="img1" src="images/simple.png" style="width: 50px;height: 50px;">
+<button type="button"
+onclick="document.getElementById('img1').src='images/smily.png'">
+SMILY
+</button>
+<button type="button"
+onclick="document.getElementById('img1').src='images/engry.png'"
+>
+ENGRY
+</button>
+<button type="button"
+onclick="document.getElementById('img1').src='images/sad.png'"
+>
+SAD
+</button>
+
+<h1>Controlling the style of an html element</h1>
+<p id="para2" style="text-align: center;">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, sint?
+</p>
+<button type="button"
+onclick="document.getElementById('para2').style='text-align:left;color:red;'">
+STYLE
+</button>
+<p id="para3" onclick="changeStyle()">
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, laudantium quibusdam ipsa accusantium repellendus totam ut fuga molestiae quidem. Laborum asperiores nisi deleniti quia et ullam impedit dignissimos quos autem, temporibus numquam nihil tenetur nostrum provident ut repellendus. Voluptas saepe quam veniam tempora sunt neque ducimus repellat, recusandae sed assumenda earum eligendi fuga facere dicta quos nihil ipsa odit ullam, distinctio accusantium cum consequatur officiis nulla error. Suscipit quia cupiditate, consectetur dolore, deleniti omnis nulla non ipsam repudiandae harum temporibus sint vel. Minima quasi doloribus enim at assumenda facere molestiae, repudiandae ex voluptatibus odit natus. Earum rem sint temporibus commodi!
+</p>
+<h2>
+Show and hide the content
+</h2>
+<p id="para4">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ea?
+</p>
+<button id="button1" type="button"
+onclick="hideAll()">
+HIDE
+</button>
+<button id="button2" type="button" style="display: none;"
+onclick="showAll()">
+SHOW
+</button>
+</body>
+</html>
